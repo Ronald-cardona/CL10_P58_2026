@@ -1,0 +1,111 @@
+<html>
+	<head>
+		<style>
+			.tables 
+			{
+				font-family: arial, sans-serif;
+				border-collapse: collapse;
+				width: 50%;
+			}
+
+			td
+			{
+				border: 1px solid #000000;
+				text-align: left;
+				padding: 10px;
+			}
+
+             th 
+			{
+				border: 1px solid #000000;
+				text-align: center;
+				padding: 15px;
+                background-color: #979797;
+			}
+
+			tr:nth-child(even) 
+			{
+				background-color: #1b89f0;
+			}
+
+            tr:nth-child(odd) 
+			{
+				background-color: #5fa8ec;
+			}
+
+
+		</style>
+		<script>
+			async function btBuscar()
+			{
+				let nombre = document.getElementById('lbNombre').value;
+				if (nombre == "")
+				{
+					return;
+				}
+				alert(nombre);
+			}
+		</script>
+	</head>
+	<body>
+		<center>
+			<h1>Buscador de nombres</h1>
+
+			<br/>
+			<label>Nombre: </label>
+			<input id="lbNombre"
+				type="Text" />
+
+			<input type="submit" 
+				value="Buscar"
+				onclick="btBuscar(); return false;"/>
+			<br/>
+			
+			<br/>
+			<table class="tables">
+				<tr>
+					<th>Nombre</th>
+                    <th>Apellido</th>
+					<th>Acción</th>
+				</tr>
+				<tr>
+					<td>Ronald</td>
+                    <td>Cardona</td>
+					<td>
+                        <input type='submit' value='Editar' />
+                        <input type='submit' value='Eliminar' />
+                    </td>
+				</tr>
+				<tr>
+					<td>Alejandro</td>
+                     <td>Cardona</td>
+					<td>
+                        <input type='submit' value='Editar' />
+                        <input type='submit' value='Eliminar' />
+                    </td>
+				</tr>
+                <tr>
+					<td>Mateo</td>
+                    <td>Cardona</td>
+					<td>
+                        <input type='submit' value='Editar' />
+                        <input type='submit' value='Eliminar' />
+                    </td>
+				</tr>
+                <tr>
+					<td>Felipe</td>
+                    <td>Cardona</td>
+					<td>
+                        <input type='submit' value='Editar' />
+                        <input type='submit' value='Eliminar' />
+                    </td>
+				</tr>
+			</table> 
+			<br />
+
+			<img src="elefante3.jpg"
+				style="width: 300px; height: 300px;" />
+		</center>
+	</body>
+
+</html>
